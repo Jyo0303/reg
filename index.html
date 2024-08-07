@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+      label,legend{
+        color: black;
+      }
+      fieldset{
+        border-radius: 23px;
+        width: 170px ;
+        margin: 0 auto;
+      }
+    </style>
+</head>
+<body>
+       
+        
+       <fieldset style="background-color: rgb(129, 133, 228); border-color:white;">
+        <legend style="text-align: center; background-color: white; color: black; font-size: 40px;" ><b>Registeration Form</b></legend>
+        <form action="login.html" autocomplete="on">
+            <br><br>
+            <input type="text" id="name" name="name"placeholder="Name" required><br><br>
+
+            <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+            <span class="prefix" style="background-color: white;">+91</span>
+            <input type="tel" id="phone" name="phone" placeholder="phone number" pattern="[0-9]{10}"><br><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Address" required></textarea><br><br>
+          
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+         
+
+            <p>Interests:</p>
+            <input type="checkbox" id="coding" name="interest" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="music" name="interest" value="music">
+            <label for="music">Music</label><br><br>
+          
+            <label for="dep">Department:</label>
+            <select id="dep" name="dep" required>
+              <option value="India">CSD</option>
+              <option value="USA">MECH</option>
+              <option value="UK">CIVIL</option>
+            </select><br><br>
+          <input list="subject" placeholder="minor">
+          <datalist id="subject" name="subject">
+            <option>Python</option>
+            <option>EC</option>
+
+          </datalist><br><br>
+          <label>Upload Document: </label>
+          <input type="file" required><br><br>
+
+          <label>Upload Photo: </label>
+          <input type="file" accept="image/*" placeholder="Select Image" required><br><br><br>
+
+          <center> <input type="submit" value="Submit" style="width: 100px; height: 30px; border-radius: 10px;"></center><br><br>
+          </fieldset>
+          </form>
+</body>
+</html>
